@@ -1,0 +1,102 @@
+{
+  "name": "Apartment Zero Waste Guide",
+  "short_name": "AptZeroWaste",
+  "description": "Practical composting and zero-waste guides for apartment dwellers and renters.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/logo/favicon.webp",
+      "sizes": "32x32",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo/apple-touch-icon.webp",
+      "sizes": "180x180",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo/icon-192.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo/icon-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "lifestyle", "environment"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "Browse Articles",
+      "short_name": "Articles",
+      "description": "View all composting and zero-waste articles",
+      "url": "/index.html#articles",
+      "icons": [
+        {
+          "src": "images/logo/icon-192.webp",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Composting Methods",
+      "short_name": "Compost",
+      "description": "Learn odorless composting methods",
+      "url": "/categories/odorless-composting-methods.html",
+      "icons": [
+        {
+          "src": "images/logo/icon-192.webp",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Kitchen Hacks",
+      "short_name": "Kitchen",
+      "description": "Zero-waste kitchen tips",
+      "url": "/categories/zero-waste-kitchen-hacks.html",
+      "icons": [
+        {
+          "src": "images/logo/icon-192.webp",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Troubleshooting",
+      "short_name": "Help",
+      "description": "Solve composting problems",
+      "url": "/categories/troubleshooting-pest-control.html",
+      "icons": [
+        {
+          "src": "images/logo/icon-192.webp",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "screenshots": [],
+  "share_target": {
+    "action": "/search.html",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}

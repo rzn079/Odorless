@@ -1,0 +1,60 @@
+# robots.txt for Apartment Zero Waste Guide
+# https://apartmentzerowasteguide.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://apartmentzerowasteguide.com/sitemap.xml
+
+# Crawl-delay (optional, be polite)
+Crawl-delay: 1
+
+# Disallow admin or private areas (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block common spam bots and scrapers
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Block AI scrapers (optional - uncomment if desired)
+# User-agent: GPTBot
+# Disallow: /
+
+# User-agent: ChatGPT-User
+# Disallow: /
+
+# User-agent: ClaudeBot
+# Disallow: /
+
+# User-agent: Applebot-Extended
+# Disallow: /

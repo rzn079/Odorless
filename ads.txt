@@ -1,0 +1,32 @@
+# ads.txt for Apartment Zero Waste Guide
+# Authorized Digital Sellers file for Google AdSense
+
+# IMPORTANT: This file must be updated with your actual AdSense publisher ID
+# once your account is approved. Do not publish this file with placeholder values.
+
+# Format: domain.com, pub-XXXXXXXXXXXXXXX, DIRECT or RESELLER, certification_id (optional)
+
+# Example (replace with your actual publisher ID):
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
+# INSTRUCTIONS:
+# 1. Apply for Google AdSense at https://www.google.com/adsense
+# 2. Once approved, you will receive a publisher ID like: pub-1234567890123456
+# 3. Replace the example line above with your actual publisher ID
+# 4. Keep the "DIRECT" designation (you are directly partnered with Google)
+# 5. The certification ID (f08c47fec0942fa0) is Google's official certification ID
+
+# Why ads.txt matters:
+# - Prevents unauthorized sellers from selling your ad inventory
+# - Required by many programmatic buyers
+# - Helps protect against ad fraud
+# - Part of Google AdSense requirements
+
+# Notes:
+# - Only add entries for ad networks you actually use
+# - Remove any entries for networks you stop using
+# - Keep this file publicly accessible at your domain root
+# - Changes may take up to 24 hours to propagate
+
+# Current status: PENDING ADSENSE APPROVAL
+# Add your publisher ID here after approval
