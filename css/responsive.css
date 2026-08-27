@@ -1,0 +1,521 @@
+/* ==========================================================================
+   Apartment Zero Waste Guide - Responsive Stylesheet
+   Mobile-first responsive design
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Large Tablets & Small Desktops (max-width: 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .article-title {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablets (max-width: 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  /* Typography adjustments */
+  html {
+    font-size: 15px;
+  }
+  
+  h1 { font-size: var(--font-size-3xl); }
+  h2 { font-size: var(--font-size-2xl); }
+  h3 { font-size: var(--font-size-xl); }
+  
+  /* Header */
+  .site-header {
+    height: auto;
+    min-height: var(--header-height);
+    padding: var(--spacing-md) 0;
+  }
+  
+  .header-inner {
+    flex-wrap: wrap;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+    z-index: var(--z-dropdown);
+  }
+  
+  .main-nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background: var(--color-bg-white);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--spacing-lg);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+    max-height: calc(100vh - var(--header-height));
+    overflow-y: auto;
+  }
+  
+  .main-nav.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-list {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  
+  .nav-list a {
+    display: block;
+    padding: var(--spacing-md);
+  }
+  
+  .header-search {
+    width: 100%;
+    margin-top: var(--spacing-md);
+    order: 3;
+  }
+  
+  .search-form {
+    width: 100%;
+  }
+  
+  .search-input {
+    flex: 1;
+    width: auto;
+  }
+  
+  .search-input:focus {
+    width: auto;
+  }
+  
+  /* Hero section */
+  .hero {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-size-lg);
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Cards */
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Article page */
+  .article-title {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .article-meta {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .author-bio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .author-bio-image {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .article-navigation {
+    flex-direction: column;
+  }
+  
+  .nav-link.prev,
+  .nav-link.next {
+    text-align: center;
+  }
+  
+  /* Table of contents */
+  .table-of-contents {
+    padding: var(--spacing-lg);
+  }
+  
+  /* Cookie banner */
+  .cookie-banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .cookie-banner-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .cookie-btn {
+    width: 100%;
+  }
+  
+  /* Back to top */
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  /* Social share */
+  .social-share {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* FAQ */
+  .faq-item {
+    padding: var(--spacing-md);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Phones (max-width: 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  /* Typography adjustments */
+  html {
+    font-size: 14px;
+  }
+  
+  h1 { font-size: var(--font-size-2xl); }
+  h2 { font-size: var(--font-size-xl); }
+  h3 { font-size: var(--font-size-lg); }
+  
+  /* Container */
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  /* Header */
+  .site-logo {
+    font-size: var(--font-size-lg);
+  }
+  
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: var(--font-size-sm);
+  }
+  
+  .btn-lg {
+    padding: var(--spacing-md) var(--spacing-xl);
+  }
+  
+  /* Cards */
+  .card-content {
+    padding: var(--spacing-md);
+  }
+  
+  .card-title {
+    font-size: var(--font-size-lg);
+  }
+  
+  /* Article content */
+  .article-content {
+    font-size: var(--font-size-base);
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .article-content table {
+    font-size: var(--font-size-sm);
+  }
+  
+  .article-content th,
+  .article-content td {
+    padding: var(--spacing-sm);
+  }
+  
+  /* Tip/warning boxes */
+  .tip-box,
+  .warning-box,
+  .info-box {
+    padding: var(--spacing-md);
+  }
+  
+  /* Author bio */
+  .author-bio {
+    padding: var(--spacing-lg);
+  }
+  
+  .author-bio-image img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Ad spaces */
+  .ad-space {
+    min-height: 200px;
+  }
+  
+  /* Sections */
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  /* Breadcrumbs */
+  .breadcrumbs {
+    font-size: 12px;
+  }
+  
+  /* Search input */
+  .search-input {
+    width: 100%;
+  }
+  
+  /* Footer */
+  .site-footer {
+    padding: var(--spacing-2xl) 0 var(--spacing-lg);
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Extra Small Devices (max-width: 360px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 360px) {
+  html {
+    font-size: 13px;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .nav-list a {
+    padding: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+  
+  .card-meta {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Landscape Orientation
+   -------------------------------------------------------------------------- */
+@media (max-width: 896px) and (orientation: landscape) {
+  .hero {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Print Styles
+   -------------------------------------------------------------------------- */
+@media print {
+  /* Hide non-essential elements */
+  .site-header,
+  .site-footer,
+  .back-to-top,
+  .cookie-banner,
+  .social-share,
+  .table-of-contents,
+  .related-articles,
+  .article-navigation,
+  .ad-space {
+    display: none !important;
+  }
+  
+  /* Reset colors for printing */
+  body {
+    background: white;
+    color: black;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  /* Ensure readable text */
+  .article-content {
+    max-width: 100%;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  
+  /* Page breaks */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+  
+  img {
+    page-break-inside: avoid;
+  }
+  
+  /* Remove shadows and effects */
+  .card,
+  .tip-box,
+  .warning-box,
+  .info-box {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   High Contrast Mode
+   -------------------------------------------------------------------------- */
+@media (prefers-contrast: high) {
+  :root {
+    --color-text: #000000;
+    --color-text-light: #333333;
+    --color-border: #000000;
+    --color-primary: #000000;
+  }
+  
+  a:focus {
+    outline-width: 3px;
+  }
+  
+  .btn {
+    border: 2px solid currentColor;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Reduced Motion
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Dark Mode Support (Optional - Can be enabled later)
+   -------------------------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  /* Uncomment to enable dark mode support */
+  /*
+  :root {
+    --color-bg: #1a1a1a;
+    --color-bg-white: #2d2d2d;
+    --color-text: #e0e0e0;
+    --color-text-light: #b0b0b0;
+    --color-text-muted: #909090;
+    --color-border: #404040;
+  }
+  
+  .site-header,
+  .site-footer {
+    background: #2d2d2d;
+  }
+  
+  .card {
+    background: #2d2d2d;
+  }
+  */
+}
+
+/* --------------------------------------------------------------------------
+   Touch Device Optimizations
+   -------------------------------------------------------------------------- */
+@media (hover: none) and (pointer: coarse) {
+  /* Increase touch target sizes */
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .nav-list a {
+    min-height: 44px;
+  }
+  
+  /* Remove hover effects on touch devices */
+  .card:hover {
+    transform: none;
+  }
+  
+  /* Ensure clickable areas are large enough */
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    min-height: 44px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Wide Screens (min-width: 1440px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+  
+  .container-narrow {
+    max-width: 900px;
+  }
+  
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+  
+  .hero-title {
+    font-size: 60px;
+  }
+}
